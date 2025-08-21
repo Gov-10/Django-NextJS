@@ -47,7 +47,7 @@ function LoginPage() {
 
   return (
     <>
-      <h1>Login</h1>
+      <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <label>Enter Username: </label>
         <input
