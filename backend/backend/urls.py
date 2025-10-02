@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
+from backapp.api import api
+from .metrics import metrics_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('metrics/', metrics_view),
+    path('api/', api.urls),
 ]
